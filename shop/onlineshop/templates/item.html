@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex; justify-content: center">
+    <div class="cellWithPhone" style="margin: 5px; display: flex; justify-content: center">
+                        <div class="card shadow" style="width: 16rem;">
+                            <div class="card-header pb-0"><h6 class="card-title"></h6></div>
+                            <h6 style="text-align: center">{{product.name}}</h6>
+                            <img src="{{product.image_url}}" class="card-img-top" style="width: 250px; height:312px;">
+                            <div class="card-body pt-0">
+                              <h6 class="card-text">Цена: {{product.price}}р</h6>
+                              <hr>
+                              <div class="buttonsPanel">
+                                <a href="#" class="btn btn-info btn-sm">Купить</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+    <h6 style="font-size: 1.5em; margin: 50px; border: 2px solid darkslategray; padding: 10px; background-color: #8D8D8D; width: 500px">
+        {{product.description}}</h6>
+</div>
+
+{% endblock %}
